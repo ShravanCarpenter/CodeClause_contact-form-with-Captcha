@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form with Captcha</title>
+  <link rel="stylesheet" href="contect.css">
+</head>
+<body>
+  <div class="contact">
+    <form action="#" method="POST">
+      <h2>Contact Me</h2>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message"></textarea>
+      <div class="captcha">
+        <span id="captcha"></span>
+        <button type="button" onclick="refreshCaptcha()"><img src="images/refresh.png"></button>
+        <input type="text" id="captcha-input" placeholder="Enter Captcha" required>
+      </div>
+      <button class="submitbtn" type="submit" onclick="checkCaptcha()">Send Message</button>
+    </form>
+  </div>
+
+  <script src="contect.js"></script>
+</body>
+</html>
